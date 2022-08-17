@@ -16,6 +16,7 @@ title = "Hugo Serif Theme"
 
   [params.homepage]
     show_contact_box = true     # show / hide the contaxt box on the homepage
+    show_contact_button = true  # show / hide the contact button on the homepage
     show_services_button = true # show / hide the "view all services" button
 
   [params.logo]
