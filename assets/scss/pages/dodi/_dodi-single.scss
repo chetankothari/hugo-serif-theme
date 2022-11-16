@@ -1,0 +1,57 @@
+.dodi {
+  .dodi-single {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    .dodi-image {
+      height: 200px;
+      width: 200px;
+
+      .dodi-image-bg {
+
+      }
+
+      img {
+        width: 175px;
+        height: auto;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+      }
+    }
+
+    .dodi-meta {
+      flex: 1;
+
+      h1 {
+        margin: 0;
+        font-size: 1.5rem;
+        font-weight: normal;
+
+        .mark {
+          background: url("https://s2.svgbox.net/pen-brushes.svg?ic=brush-9&color=002644cd");
+          margin: -2px -2px;
+          padding: 2px 14px;
+          color: #ffffff;
+        }
+      }
+
+      p {
+        color: $black;
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+
+      a {
+        font-size: 1.2rem;
+      }
+
+      .social {
+        display: inline-block;
+        width: 16px;
+        margin-right: 4px;
+      }
+    }
+  }
+}
