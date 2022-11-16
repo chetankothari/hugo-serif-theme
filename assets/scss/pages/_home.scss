@@ -1,2 +1,21 @@
 .page-home {
 }
+
+.testimonials {
+  text-align: center;
+
+  .testimonial {
+    width: 50%;
+    margin: 0 16px;
+
+    .testimonial-heading {
+      font-family: Outfit;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    .testimonial-body {
+      text-align: justify;
+    }
+  }
+}
