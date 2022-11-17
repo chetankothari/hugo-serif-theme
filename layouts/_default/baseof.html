@@ -4,7 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="keywords" content="{{ .Site.Params.seo.meta_keywords }}">
   <title>{{ block "title" . }}{{ .Params.meta_title | default (printf "%s - %s" .Title .Site.Title) }}{{ end }}</title>
+  <meta name="description" content="{{ .Params.meta_description | default .Site.Params.seo.meta_description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="{{ "favicon-32x32.svg" | relURL }}">
 
@@ -22,6 +24,7 @@
 
   {{ block "meta_tags" . }}
     {{ with .Params.description }}<meta name="description" content="{{ . }}"/>{{ end }}
+    <meta property="og:site_name" content="{{ .Params.meta_title | default .Title }}"/>
     <meta property="og:title" content="{{ .Params.meta_title | default .Title }}"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="{{ .Permalink }}"/>
